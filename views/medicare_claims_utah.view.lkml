@@ -2,7 +2,7 @@ view: medicare_claims_utah {
   sql_table_name: `looker_scratch.medicare_claims_utah`
     ;;
 
-  measure: avg_spending_per_episode__hospital_ {
+  dimension: avg_spending_per_episode__hospital_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__Hospital_ ;;
   }
