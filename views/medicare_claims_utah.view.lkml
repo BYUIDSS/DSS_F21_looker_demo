@@ -85,8 +85,15 @@ view: medicare_claims_utah {
     sql: ${TABLE}.string_field_12 ;;
   }
 
-  measure: count {
+  measure: hospitals_count {
     type: count
     drill_fields: [hospital_name]
   }
+
+  # measure: sum {
+  #   type:  sum
+  #   drill_fields: []
+
+  # }
+
 }
