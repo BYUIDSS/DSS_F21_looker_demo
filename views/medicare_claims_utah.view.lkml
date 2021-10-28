@@ -2,17 +2,17 @@ view: medicare_claims_utah {
   sql_table_name: `looker_scratch.medicare_claims_utah`
     ;;
 
-  dimension: avg_spending_per_episode__hospital_ {
+  measure: avg_spending_per_episode__hospital_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__Hospital_ ;;
   }
 
-  dimension: avg_spending_per_episode__nation_ {
+  measure: avg_spending_per_episode__nation_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__Nation_ ;;
   }
 
-  dimension: avg_spending_per_episode__state_ {
+  measure: avg_spending_per_episode__state_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__State_ ;;
   }
@@ -55,17 +55,17 @@ view: medicare_claims_utah {
     sql: ${TABLE}.Measure_Start_Date ;;
   }
 
-  dimension: percent_of_spending__hospital_ {
+  measure: percent_of_spending__hospital_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__Hospital_ ;;
   }
 
-  dimension: percent_of_spending__nation_ {
+  measure: percent_of_spending__nation_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__Nation_ ;;
   }
 
-  dimension: percent_of_spending__state_ {
+  measure: percent_of_spending__state_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__State_ ;;
   }
