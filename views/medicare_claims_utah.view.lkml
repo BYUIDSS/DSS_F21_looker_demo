@@ -7,12 +7,12 @@ view: medicare_claims_utah {
     sql: ${TABLE}.Avg_Spending_Per_Episode__Hospital_ ;;
   }
 
-  measure: avg_spending_per_episode__nation_ {
+  dimension: avg_spending_per_episode__nation_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__Nation_ ;;
   }
 
-  measure: avg_spending_per_episode__state_ {
+  dimension: avg_spending_per_episode__state_ {
     type: number
     sql: ${TABLE}.Avg_Spending_Per_Episode__State_ ;;
   }
@@ -55,17 +55,17 @@ view: medicare_claims_utah {
     sql: ${TABLE}.Measure_Start_Date ;;
   }
 
-  measure: percent_of_spending__hospital_ {
+  dimension: percent_of_spending__hospital_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__Hospital_ ;;
   }
 
-  measure: percent_of_spending__nation_ {
+  dimension: percent_of_spending__nation_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__Nation_ ;;
   }
 
-  measure: percent_of_spending__state_ {
+  dimension: percent_of_spending__state_ {
     type: number
     sql: ${TABLE}.Percent_of_Spending__State_ ;;
   }
