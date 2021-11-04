@@ -92,6 +92,7 @@ view: medicare_claims_utah {
 
   measure: count_distinct_hospitals {
     type: count_distinct
+    sql: ${hospital_name} ;;
     drill_fields: [hospital_name]
   }
 
