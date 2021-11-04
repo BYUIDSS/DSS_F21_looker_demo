@@ -96,10 +96,10 @@ view: medicare_claims_utah {
 
   }
 
-  measure: claim_type_count {
-    type:  count_distinct
-    drill_fields: [claim_type]
-
-  }
+  # measure: claim_type_count {
+  #   type:  count_distinct
+  #   drill_fields: [claim_type]
+    # # # # Not currently working, so I disabled it.
+  # }
 
 }
