@@ -90,10 +90,16 @@ view: medicare_claims_utah {
     drill_fields: [hospital_name]
   }
 
-  # measure: sum {
-  #   type:  sum
-  #   drill_fields: []
+  measure: claim_count {
+    type:  count
+    drill_fields: [claim_type]
 
-  # }
+  }
+
+  measure: claim_type_count {
+    type:  count_distinct
+    drill_fields: [claim_type]
+
+  }
 
 }
